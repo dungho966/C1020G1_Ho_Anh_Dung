@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let weight = parseInt(prompt('nhap can nang cua ban'));
+    let height = parseInt(prompt('nhap chieu cao cua ban'));
+    let BMI = weight / (height ^ 2);
+    if (BMI < 18.5){
+        alert('Underweight');
+    } else if (BMI < 25) {
+        alert('Normal');
+    } else if (BMI <= 30){
+        alert('Overweight');
+    } else if (BMI >30){
+        alert('Obese')
+    }
+
+
+</script>
+
+</body>
+</html>
