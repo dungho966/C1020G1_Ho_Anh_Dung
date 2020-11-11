@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vilaaa</title>
+</head>
+<body>
+<h1 style="color: red">Ứng Dụng Quản Lý Khu nghỉ dưỡng Furama</h1>
+<fieldset style="background: chocolate" >
+<table>
+    <tr>
+    <th><form style="background: chocolate"><th>
+        Họ và Tên
+        <input type="text" name="name"><br><br>
+        Số CMND
+        <input type="text" name="soCMND"><br><br>
+        Ngày Sinh
+        <input type="date" name="date"><br> <br>
+        Địa Chỉ
+        <select name="adress" id="diachi">
+            <option>Đà Nẵng</option>
+            <option>Huế</option>
+            <option>Quảng Nam</option>
+        </select><br><br>
+        Loại Customer:
+        <label><input type="radio" name="Customer">Diamond</label>
+        <label><input type="radio" name="Customer" >Platinum</label>
+        <label><input type="radio" name="Customer" >Gold</label>
+        <label><input type="radio" name="Customer" >Silver</label>
+        <label><input type="radio" name="Customer" >Member</label><br><br>
+        Giảm Giá
+        <input id="discountf" type="text" name="discount"><br> <br>
+        Số Lượng Đi kèm
+        <input type="number" name="gowith"><br><br>
+        <p>Ngày cho thuê</p>
+        <input id="day" type="number" name="startdate"><br><br>
+        Loại Dịch Vụ
+        <select name="service" id="dichvu">
+            <option>Villa</option>
+            <option>House</option>
+            <option>Room</option>
+        </select><br><br>
+        Loại Phòng Thuê
+        <label><input type="radio" name="Kindofroom">Vip</label>
+        <label><input type="radio" name="Kindofroom">Business</label>
+        <label><input type="radio" name="Kindofroom">Normal<br> <br>
+            <button onclick="pay()"  name="payy" id="thanhtoan" type="button">Thanh Toán</button>
+            <script>
+            let discount = document.getElementById("discountf");
+            let day = document.getElementById("day");
+            let service = document.getElementById("dichvu");
+            let result  = 0;
+            function pay() {
+            if (service.value == "Villa"){
+                result = 500 * parseInt(day.value) * (1-discount.value/100);
+            } else if (service.value == "House"){
+                result = 300 * parseInt(day.value) * ( 1 - discount.value/100);
+            } else if (service.value == "Room"){
+                result = 100 * parseInt(day.value) * (1 - discount.value/100);
+            }
+            alert(result);
+            }
+
+
+
+            </script>
+
+
+
+
+
+    </form>
+    </tr>
+</fieldset>
+</table>
+
+</body>
