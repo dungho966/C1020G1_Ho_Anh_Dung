@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   // let array = ["red","green","white","black"];
+   // document.writeln(array);
+  let num = prompt("nhap so ban muon nhap : ");
+  let str = num.toString()
+    let result = [str[0]];
+  for (x=1;x<str.length;x++){
+      if ((str[x-1]%2===0)&&(str[x]%2===0)){
+          result.push('-' ,str[x]);
+      } else {
+          result.push(str[x]);
+      }
+  }
+  alert(result);
+</script>
+</body>
+</html>
