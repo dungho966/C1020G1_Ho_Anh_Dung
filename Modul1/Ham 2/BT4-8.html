@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="check()">
+<script >
+    let arr1 = [];
+    function check() {
+        for (let i=1;i<5;i++) {
+            arr1[i] = parseInt(prompt("nhap so ban thich : " + i));
+            if (isNaN(arr1[i])) {
+                alert("ko the thuc hien ");
+        }
+        }
+            arr1.reverse();
+            alert(arr1.join());
+    }
+
+</script>
+</body>
+</html>

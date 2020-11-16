@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhap so can nhap"));
+    let mul = 1 ;
+    if (a <= 0 || isNaN(a)  ){
+        alert("khong the tinh giai thua ");
+    } if (a>0) {
+        function giaithua(a) {
+            for (let i = 1; i <= a; i++) {
+                mul = mul * i  ;
+            }
+            alert("giai thua bang" + mul);
+        }
+    }
+    giaithua(a);
+
+</script>
+</body>
+</html>

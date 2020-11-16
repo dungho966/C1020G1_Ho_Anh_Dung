@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("nhap so ban muon kiem tra: "));
+    function isPrime(number){
+        let SNT = true;
+        if (number<2){
+            SNT = false;
+        } else {
+            for (let i=2; i < number -1;i++){
+                if (number % i===0){
+                    SNT = false;
+                    break;
+                }
+                }
+            }
+        }
+        if (SNT){
+            alert("day la so nguyen to ");
+        } else {
+            alert("day khong phai so nguyen to");
+    }
+
+    isPrime(number);
+</script>
+
+</body>
+</html>

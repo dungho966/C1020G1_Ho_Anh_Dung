@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhap ki tu can kiem tra"));
+    let b = parseInt(prompt("nhap ki tu can kiem tra"));
+    let c = parseInt(prompt("nhap ki tu can kiem tra"));
+    function check(a,b,c) {
+        let min = a;
+        if (min< b && min < c){
+        min = a;
+        alert("so be nhat la :" +a)
+        }else if (b<c){
+            min = b;
+            alert("so be nhat la : "+b);
+        }else {
+            alert("so be nhat la" +c);
+        }
+    }
+    check(a,b,c);
+
+</script>
+</body>
+</html>
