@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(celcius) {
+            this.celcius = celcius;
+        }
+        getcelcius (){
+            return this.celcius;
+        }
+        getfahrenheit (){
+            return (this.celcius * 1.8)  +32;
+        }
+        getkevin(){
+            return this.celcius + 273;
+        }
+        setcelcius(celcius){
+            this.celcius= celcius ;
+        }
+        setTemperature(celcius){
+            this.celcius = celcius;
+        }
+    }
+    let TemperatureA = new Temperature(20);
+        TemperatureA.setTemperature(25);
+        alert("nhiet do F la: " +TemperatureA.getfahrenheit());
+        alert("nhiet do K la: " +TemperatureA.getkevin());
+</script>
+</body>
+</html>
