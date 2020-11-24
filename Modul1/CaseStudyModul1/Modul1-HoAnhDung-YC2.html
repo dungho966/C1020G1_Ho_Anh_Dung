@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name="Ho Anh Dung";
+    let cmnd="12345";
+    let birthday="12/12/1234";
+    let email="abc@abc.abc";
+    let address="Quang Nam";
+    let typeService=Villa;
+    let typeRoom="Vip";
+    let typeCustomer="Diamond";
+    let discount=10;
+    let quantityIncluded=10;
+    let rendDays=7;
+    let totalPay;
+
+    let choose = prompt("1.Hiển thị thông tin khách hàng."+"\n"+
+        "2.Chỉnh sửa thông tin khách hàng."+"\n"+
+        "3.Hiển thị giá sau khi được giảm giá.");
+
+    switch (choose) {
+        case 1: {
+            alert("Tên: " + name + "\n" +
+                "cmnd: " + cmnd + "\n" +
+                "Ngày Sinh: " + birthday + "\n" +
+                "Email: " + email + "\n"+
+            "Địa Chỉ: " + address + "\n" +
+            "Loại Dịch Vụ: " + typeService +"\n"+
+            "Loại Phòng: " + typeRoom + "\n" +
+            "Loại Khách Hàng: " + typeCustomer +"\n"+
+            "Giảm Giá: " + discount + "\n" +
+            "Số lượng đi kèm: " + quantityIncluded +"\n"+
+            "Số Lượng Ngày: " + rendDays) ;
+            break;
+        }
+        }
+        case 2: {
+            let chooseEdit = parseInt(prompt("1.Tên: " + name + "\n" +
+                "2.cmnd: " + cmnd + "\n" +
+                "3.Ngày Sinh: " + birthday + "\n" +
+                "4.Email: " + email + "\n"+
+            "5.Địa Chỉ: " + address + "\n" +
+            "6.Loại Dịch Vụ: " + typeService + "\n" +
+            "7.Loại Phòng: " + typeRoom + "\n" +
+            "8.Loại Khách Hàng: " + typeCustomer + "\n" +
+            "9.Giảm Giá: " + discount + "\n" +
+            "10.Số lượng đi kèm: " + quantityIncluded + "\n" +
+            "11.Số Lượng Ngày: " + rendDays));
+
+            switch (chooseEdit) {
+                case 1: {
+                    name = prompt("Enter name: ");
+                }
+            }
+            alert("Tên: " + name + "\n" +
+                "cmnd: " + cmnd + "\n" +
+                "Ngày Sinh: " + birthday + "\n" +
+                "Email: " + email + "\n"+
+            "Địa Chỉ: " + address + "\n" +
+            "Loại Dịch Vụ: " + typeService + "\n" +
+            "Loại Phòng: " + typeRoom + "\n" +
+            "Loại Khách Hàng: " + typeCustomer + "\n" +
+            "Giảm Giá: " + discount + "\n" +
+            "Số lượng đi kèm: " + quantityIncluded + "\n" +
+            "Số Lượng Ngày: " + rendDays);
+            break;
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
